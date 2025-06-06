@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://5dq6ss265v42"]
+
+[ext_resource type="FontFile" uid="uid://dypfcx00lm03u" path="res://assets/font/retro.ttf" id="1_ahhtf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oo0fn"]
+font = ExtResource("1_ahhtf")
+font_size = 38
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ysmq"]
+font = ExtResource("1_ahhtf")
+font_size = 38
+
+[sub_resource type="LabelSettings" id="LabelSettings_6fi6k"]
+font = ExtResource("1_ahhtf")
+font_size = 55
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Score" type="Label" parent="."]
+anchors_preset = -1
+anchor_right = 0.01875
+anchor_bottom = 0.00138889
+offset_left = 64.0
+offset_top = 54.0
+offset_right = 187.0
+offset_bottom = 102.0
+text = "SCORE"
+label_settings = SubResource("LabelSettings_oo0fn")
+
+[node name="HighScore" type="Label" parent="."]
+offset_left = 815.0
+offset_top = 53.0
+offset_right = 1090.0
+offset_bottom = 102.0
+text = "HIGH SCORE"
+label_settings = SubResource("LabelSettings_5ysmq")
+
+[node name="Play" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -73.5
+offset_top = -11.5
+offset_right = 73.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "PRESS SPACE TO PLAY"
+label_settings = SubResource("LabelSettings_6fi6k")

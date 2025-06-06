@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://df4138athwm8x"]
+
+[ext_resource type="Texture2D" uid="uid://86kkgph6ccca" path="res://assets/obstacles/snake.png" id="1_a5f6l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a5f6l"]
+size = Vector2(264, 352)
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2(0.4, 0.4)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_a5f6l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 48)
+shape = SubResource("RectangleShape2D_a5f6l")

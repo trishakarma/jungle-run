@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://c637bx6qbnpb5"]
+
+[ext_resource type="Texture2D" uid="uid://b0ij54r0xmylj" path="res://assets/Jungle Green.png" id="1_splo0"]
+[ext_resource type="Texture2D" uid="uid://bus10c0xe6e7" path="res://assets/JungleBG.png" id="2_eq6nc"]
+[ext_resource type="Texture2D" uid="uid://dvhtb7tw5xhis" path="res://assets/JungleBG2.png" id="3_bpugw"]
+
+[node name="Background" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_splo0")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(0, -10)
+scale = Vector2(1, 1.01389)
+texture = ExtResource("2_eq6nc")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(0, -10)
+scale = Vector2(1, 1.01389)
+texture = ExtResource("3_bpugw")
+centered = false
