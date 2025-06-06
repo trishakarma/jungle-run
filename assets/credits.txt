@@ -1,0 +1,8 @@
+Credits for assets
+  - Parallax background: 
+      - https://rogueagency.itch.io/jungle-parallax
+      - Canva.com
+  - Ranger cat:
+      - https://akari21.itch.io/rangercat
+  - Obstacles:
+      - https://free-game-assets.itch.io/free-swamp-2d-tileset-pixel-art
